@@ -1,0 +1,73 @@
+body, .row, .row div {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-fluid {
+    background-color: #ffffff; 
+    padding:0;
+    margin:0;
+    position:absolute;
+    overflow:hidden;
+    -webkit-animation: slide-in-bottom 0.5s both;
+    animation: slide-in-bottom 0.5s both;
+   
+}
+
+.page-wrapper {
+    background-color:#EFEFEF;
+}
+
+.post-slider {
+
+    height:100vh;
+    width:100vw;
+    outline: none;
+}
+
+.post-slider .post-wrapper {
+  
+    width:100vw;
+    height:280px;
+
+}
+
+.post-slider .post-wrapper .post {
+    display: inline-block;
+    width:100vw;
+    height:280px;
+}
+
+.post-slider .slider-title{
+    color:#08674E;
+    font-size:24px;
+    font-family: 'Mansalva', cursive;
+    transform: translateX(132px) translateY(53px);
+}
+
+.post-slider .close {
+    width:5vw;
+    transform: translateX(-176px) translateY(13px) rotate(-90deg);
+    
+}
+
+.post-slider .post-wrapper .post .video-play  {
+    width:100vw;
+    height:280px;
+}
+
+.post-slider .post-wrapper .post .video-info .video-recipe {
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+    color: #272727;
+    width:84vw;
+    transform: translateX(20px) translateY(20px);
+}
+
+.slick-dots li button {
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color:#FF6810;
+}

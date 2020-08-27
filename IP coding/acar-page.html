@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Acar Awak</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--Javascript-->
+    <script src="js/acar-page-script.js"></script>
+
+    <!--CSS-->
+    <link rel='stylesheet' type='text/css'media='screen' href='css/acar-page-style.css'>
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="container-fluid">
+
+        <div class="row">
+            <div class="col-12 header">
+                <div class="header-title">
+                    <p>Acar Awak</p>
+                </div>
+    
+                <div class="back-button">
+                    <input type="image" src="images/back-icon-2.png" alt="back button" width="15px" height="30px">
+                </div>
+
+                <div class="favourite-action">
+                    <button class="heart-btn typeReversed" onClick="localStorage.id=1">
+                        <span class="heart-icon">
+                            <i class="heart-input typeReversed iconOnly">
+                                    <img  class="heart-input" src="images/heart-btn-1.png" alt="heart-input">
+                            </i>
+                            <i class="heart-output iconOnly hide">
+                                    <img class="heart-output" src="images/heart-btn-2.png" alt="heart-output">
+                            </i> 
+                        </span>
+                     </button>
+                </div>
+
+                <div class="recipe-image">
+                    <img class="recipe-image" src="images/acar-recipe.png" alt="acar awak">
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-12 tabs">
+
+            <div class="tab-btn" id="myTab">
+                <button class="tablink" onclick="openPage('Info', this)" id="defaultOpen">Info</button>
+                <button class="tablink" onclick="openPage('Recipe', this)" >Recipe</button>
+                <button class="tablink" onclick="openPage('Reviews', this)">Review</button>
+            </div>
+
+            <div id="Info" class="tabcontent">
+
+                <div class="notes">
+                    <p>Notes</p>
+                </div>
+
+                <div class="notes-text">
+                    <p> The vegetables being used are cabbage, cucumber, carrot, 
+                        white radish and pineapple. However, the choice of vegetables are totally up to you. 
+                        You use anything you desire. </p>
+                </div>
+
+                <div class="recipe-pic">
+                    <img class="recipe-pic" src="images/acar-img.png" alt="acar image">
+                </div>
+
+                <div class="story">
+                    <p>My Story</p>
+                </div>
+
+                <div class="story-text">
+                    <p id="one"> Acar Awak, a nyonya appetizer that can be served with or without rice.</p>
+                    <br>
+                    <p id="two">This dish triggers a variety of flavours, from sour to spicy. 
+                        The crunchiness of colourful vegetables combining with the flavours 
+                        makes it appetizing no matter when.</p>
+                    <br>
+                    <p id="three">This dish can be eaten with rice or as an appetizer, it can also be stored 
+                        in the fridge for it to last for a few weeks. </p>
+                </div>
+            
+            </div>
+
+            <div id="Recipe" class="tabcontent">
+
+                <div class="info">
+                    <p id="difficulty">Moderate</p>
+                    <p id="prep">Prep 10mins</p>
+                    <p id="cook">Cook 20mins</p>
+                </div>
+
+                <div class="ingredient">
+                    <p>Total ingredients: 21</p>  
+                </div>
+
+                <p class="title-break">Topping</p>
+
+                <div class="ingredient-list">
+                    <label id="ingredient-1" class="container">
+                        300g Grounded peanuts
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        150g Toasted sesame seeds 
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <p class="title-break">Seasoning</p>
+
+                    <label id="ingredient-1" class="container">
+                        400g Sugar
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        3/4 cups Vinegar 
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        2 tablespoon Salt
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        1/2 Oyster sauce
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        2 tablespoon Assam Jawa paste 
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <p class="title-break">Chilli paste</p>
+
+                    <label id="ingredient-1" class="container">
+                        30pcs Dried chilli
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        5 pcs Candlenuts 
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        20pcs Shallots 
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        1pc Belachan 
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                       2 stalks Lemongrass 
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        1 teaspoon Tumeric
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        2 small pcs Red ginger
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        1 tablespoon Cooking oil
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <p class="title-break">Vegetables</p>
+
+                    <label id="ingredient-1" class="container">
+                        3 Cucumber 
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        4 Carrot
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        1 Cabbage
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        1 White radish
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        10pcs each Green and Red chilli                      
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id="ingredient-1" class="container">
+                        1 Pineapple                    
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="divider">
+                    <div id="divider"></div>
+                </div>
+
+                <div class="steps">
+                    <p class="steps">Total steps: 6</p>  
+                </div>
+
+                <div class="indicator">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                    <div class="six"></div> 
+                </div>
+
+                <div class="timeline">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                    <div class="line-4"></div>
+                    <div class="line-5"></div>
+                </div>
+
+                <div class="instruction">
+                    <div class="instruction-1">
+                        <p>Cut the vegetables into thin slices. Soak the julienned 
+                            cucumber and white radish with white vinegar for more crunchiness. 
+                            Leave it aside for later. 
+                        </p>
+                        <div id="steps-line-1"></div>
+                    </div>
+
+                    <div class="instruction-2">
+                        <p>Prepare the toppings by roasting the peanuts until it looks slightly burnt
+                            and blend the roasted peanuts into crumbs. Put them aside for later.
+                        </p>
+                        <div id="steps-line-2"></div>
+                    </div>
+
+                    <div class="instruction-3">
+                        <p>To prepare the paste, cut the dried chillies into pieces, slice the shallots, 
+                            lemongrass and red ginger. Finally, blend all the chilli paste ingredients together until a paste is formed. 
+                        </p>
+                        <div id="steps-line-3"></div>
+                    </div>
+
+                    <div class="instruction-4">
+                        <p>Fry the chilli paste with oil in medium to high heat in a pan until fragrant. 
+                        </p>
+                        <div id="steps-line-4"></div>
+                    </div>
+
+                    <div class="instruction-5">
+                        <p>Follow by adding the assam paste into the pan and slowly add the julienned vegetables 
+                            into the pan altogether. Stir them well and add in sugar according to taste. 
+                        </p>
+                        <div id="steps-line-5"></div>
+                    </div>
+
+                    <div class="instruction-6">
+                        <p>Finally, sprinkle the roasted peanuts crumbs and mix them well together with the vegetables. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video-btn">
+                <button id="video-btn">Let's Cook</button>
+                <div id="space"></div>
+                </div>
+
+                <!--div class="bg-modal">
+                    <div class="modal-content">
+                        <div class="close">
+                            <img class="close" src="images/back-icon-2.png" alt="close">
+                        </div>
+                    </div>
+                </div-->
+            </div>
+
+                <div id="Reviews" class="tabcontent">
+
+                    <div class="title">
+                        <p class="title">Overall ratings:</p>
+                    </div>
+
+                    <div class="ratings">
+                        <img class="stars" src="images/small stars.png" alt="stars">
+                    </div>
+
+                    <div class="post">
+                        <div class="detail">
+                            <img id="profile" src="images/profile pic.png" alt="profile">
+                            <p id="name">Rachel</p>
+                            <p id="duration">2 days ago</p>
+                        </div>
+                        <div class="text">
+                            <p id="text">Instead of yam bean I replace it with long beans.</p>
+                        </div>
+                        <div class="react">
+                            <diiv class="icon-react">
+                                <img id="heart-review" src="images/review-heart.png">
+                                <img id="comment-review" src="images/review-comment.png">
+                                <img id="edit" src="images/review-dot.png">
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <p id="likes"> 2 like(s)</p>
+                            <p id="comment">1 comment(s)</p>
+                            <img id="stars-rating" src="images/small stars.png" alt="stars">
+                        </div>
+
+                        <div class="end-line"></div>
+
+                        <div class="rate-btn">
+                            <button id="rate-btn" onclick="myFunction()">Rate your experience</button>
+                            <div id="space"></div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+<script>
+    
+    function openPage(pageName,elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.color = "";
+    }
+
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.borderBottom = "";
+    }
+
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.color = "#FF6810";
+
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.borderBottom = "2px solid #08674E";
+    }
+
+    function myFunction() {
+        alert("This is currently unavailable, thanks for your understanding.");
+        
+    }
+
+    
+
+
+    
+
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>    
+</html>

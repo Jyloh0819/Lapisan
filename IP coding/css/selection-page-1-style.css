@@ -1,0 +1,339 @@
+body, .row, .row div {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-fluid {
+    background-color: #ffffff; 
+    padding:0;
+    margin:0;
+    position:absolute;
+    overflow:hidden;
+    -webkit-animation: slide-in-bottom 0.5s both;
+    animation: slide-in-bottom 0.5s both;
+}
+
+.header {
+    width: 100%;
+    height: 20vh;
+    background-color:#0A7E5F;
+}
+
+.header .header-title {
+    font-family: 'Mansalva', cursive;
+    color: #ffffff;
+    font-size:25px;
+    transform: translateX(92px) translateY(47px);
+    position:absolute;
+}
+
+.header .back-button {
+    transform: translateX(30px) translateY(51px);
+    position:relative;
+}
+
+/*bookmark button*/
+
+.header .bookmark-action .bookmark-btn{
+    transform: translateY(18px) translateX(327px);
+    width:5px;
+    height:5px;
+    outline: none;
+    position:relative;
+}
+
+.header .bookmark-action .bookmark-btn .bookmark-icon .bookmark-input {
+    transform: translateX(-25px) translateY(-10px);
+    width:40px;
+    height:40px;
+}
+
+.header .bookmark-action .bookmark-btn .bookmark-icon .bookmark-output{
+    transform: translateX(-25px) translateY(-10px);
+    width:40px;
+    height:40px;
+}
+
+.hide{
+    display: none;
+  }
+
+.container-1 {
+    background-color:#EFEFEF;
+    border: 1px solid #3C2209;
+    width:294px;
+    height:195px;
+    border-radius: 15px 15px 50px 15px;
+    transform: translateX(42px) translateY(66px);
+    position:absolute;
+    
+}
+
+
+/*slide-in-top*/
+@-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1800px);
+              transform: translateY(1800px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(-150px);
+              transform: translateY(-150px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+#acar-img {
+    width:134px;
+    height:137px;
+    transform: translateX(-21px) translateY(-36px);
+    position:relative;
+}
+
+.acar-content #acar-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #272727;
+    font-weight:700;
+    transform: translateX(132px) translateY(-120px);
+}
+
+.acar-content .recipe-info .icon #time {
+    width:20px;
+    height:20px;
+    transform: translateX(86px) translateY(-64px);
+}
+
+.acar-content .recipe-info .icon #steps {
+    width:20px;
+    height:16px;
+    transform: translateX(111px) translateY(-96px);
+}
+
+.acar-content .recipe-info .icon #ingredients {
+    width:14px;
+    height:19px;
+    transform: translateX(132px) translateY(-125px);
+}
+
+.info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #272727;
+}
+
+.info #info-ingredient {
+
+    transform: translateX(158px) translateY(-148px);
+}
+
+.info #info-steps {
+
+    transform: translateX(158px) translateY(-157px);
+}
+
+.info #info-time {
+
+    transform: translateX(158px) translateY(-166px);
+}
+
+.acar-ratings #acar-stars {
+    transform: translateX(13px) translateY(-169px);
+    width:104px;
+    height:16px;
+}
+
+.favourite-action .heart-btn{
+    transform: translateY(221px) translateX(283px);
+    width:5px;
+    height:5px;
+    outline: none;
+    position:relative;
+    z-index:1;
+}
+
+.favourite-action .heart-btn .heart-icon .heart-input {
+    transform: translateX(-19px) translateY(-10px);
+    width:35px;
+    height:35px;
+}
+
+.favourite-action .heart-btn .heart-icon .heart-output{
+    transform: translateX(-19px) translateY(-10px);
+    width:35px;
+    height:35px;
+}
+
+.hide{
+    display: none;
+  }
+
+
+
+.container-2 {
+    background-color:#EFEFEF;
+    border: 1px solid #3C2209;
+    width:294px;
+    height:195px;
+    border-radius: 15px 15px 50px 15px;
+    transform: translateX(42px) translateY(276px);
+    position:absolute;
+}
+
+#nasilemak-img {
+    width:134px;
+    height:137px;
+    transform: translateX(-21px) translateY(-36px);
+    position:relative;
+}
+
+.nasilemak-content #nasilemak-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #272727;
+    font-weight:700;
+    transform: translateX(132px) translateY(-120px);
+}
+
+.nasilemak-content .recipe-info .icon #time {
+    width:20px;
+    height:20px;
+    transform: translateX(86px) translateY(-64px);
+}
+
+.nasilemak-content .recipe-info .icon #steps {
+    width:20px;
+    height:16px;
+    transform: translateX(111px) translateY(-96px);
+}
+
+.nasilemak-content .recipe-info .icon #ingredients {
+    width:14px;
+    height:19px;
+    transform: translateX(132px) translateY(-125px);
+}
+
+.info-2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #272727;
+}
+
+.info-2 #info-ingredient {
+
+    transform: translateX(158px) translateY(-148px);
+}
+
+.info-2 #info-steps {
+
+    transform: translateX(158px) translateY(-157px);
+}
+
+.info-2 #info-time {
+
+    transform: translateX(158px) translateY(-166px);
+}
+
+.nasilemak-ratings #nasilemak-stars {
+    transform: translateX(13px) translateY(-169px);
+    width:104px;
+    height:16px;
+}
+
+.favourite-action-2 .heart-btn-2{
+    transform: translateY(431px) translateX(283px);
+    width:5px;
+    height:5px;
+    outline: none;
+    position:relative;
+}
+
+.favourite-action-2 .heart-btn-2 .heart-icon-2 .heart-input-2 {
+    transform: translateX(-19px) translateY(-10px);
+    width:35px;
+    height:35px;
+}
+
+.favourite-action-2 .heart-btn-2 .heart-icon-2 .heart-output-2{
+    transform: translateX(-19px) translateY(-10px);
+    width:35px;
+    height:35px;
+}
+
+.hide{
+    display: none;
+  }
+
+
+/*iphone8+*/
+
+@media only screen and (min-width: 411px) {
+
+    .header .header-title {
+        transform: translateX(109px) translateY(47px);
+    
+    }
+    
+    .header .back-button {
+        transform: translateX(38px) translateY(51px);
+
+    }
+    
+    /*bookmark button*/
+    
+    .header .bookmark-action .bookmark-btn{
+        transform: translateY(18px) translateX(350px);
+    }
+
+    .container-2 {
+        transform: translateX(60px) translateY(303px);
+      
+    }
+
+    .container-1 {
+        transform: translateX(60px) translateY(70px);
+    }
+}
+
+@media only screen  and (device-width : 375px) and (device-height : 812px) {
+
+    .header .header-title {
+        transform: translateX(96px) translateY(58px);
+    
+    }
+    
+    .header .back-button {
+        transform: translateX(31px) translateY(62px);
+
+    }
+    
+    /*bookmark button*/
+    
+    .header .bookmark-action .bookmark-btn{
+        transform: translateY(30px) translateX(327px);
+    }
+
+    .container-2 {
+        transform: translateX(47px) translateY(345px);
+      
+    }
+
+    .container-1 {
+        transform: translateX(47px) translateY(116px);
+    }
+
+}
